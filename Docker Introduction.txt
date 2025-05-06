@@ -1,0 +1,6 @@
+Docker
+What is docker
+  - a software that helps to build, manage, secure the application anywhere on any platform.
+
+Container
+   - is a kind of software image that will hold all the information about the software you are working.

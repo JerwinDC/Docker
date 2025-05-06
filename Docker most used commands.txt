@@ -1,0 +1,27 @@
+docker --version  ==> check docker version
+
+docker images ==> check docker images that were already pulled.
+
+docker pull ubuntu ==> sample command to pull an image (eg. ubuntu), docker only download the required libraries of a certain software image that makes it efficient to use docker 
+
+docker ps -a ==> check the total containers are available in a system (running or not) without -a only the running containers will be displayed
+
+docker run -it -d ubuntu ==>create a container and run it ***** -it(interactive mode -- keeps the container's standard input (stdin) open, allowing you to interact with it.) -d(detached mode -- to run the container in the background rather than attaching it to the terminal)
+
+docker restart {containerID} ==> restart the running container
+
+docker stop {containerID} ==> stop the running container
+
+docker start {containerID} ==> start the existing container
+
+docker exec -it {containerID} bash ==> run commands inside a running container it allows you to execute commands in an already started container
+
+exit ==> to exit from the current execution of a running container in interactive mode
+
+docker rm {containerID} ==> remove an already created container
+
+docker rmi {imageID} ==> remove downloaded images from the system
+
+dcoker inspect {containterID} ==> check all the information associated with the particular container
+
+docker image prune -a ==> remove all images that are not associated with any containers (dangling images)
