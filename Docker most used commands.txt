@@ -25,3 +25,5 @@ docker rmi {imageID} ==> remove downloaded images from the system
 dcoker inspect {containterID} ==> check all the information associated with the particular container
 
 docker image prune -a ==> remove all images that are not associated with any containers (dangling images)
+
+docker logs {containerID} ==> display the logs of a particular container
