@@ -27,3 +27,5 @@ dcoker inspect {containterID} ==> check all the information associated with the 
 docker image prune -a ==> remove all images that are not associated with any containers (dangling images)
 
 docker logs {containerID} ==> display the logs of a particular container
+
+docker kill {containerID} ==> kill the running container
