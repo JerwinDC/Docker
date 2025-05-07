@@ -1,5 +1,18 @@
-download and run MSSQL server container
+//download and run MSSQL server container
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Jjdcjjdc29" -e "MSSQL_PID=Evaluation" -p 1433:1433  --name SQLAutomation --hostname SQLAutomation -d mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
 
-installing sql cli where sql queries will be executed
+//installing sql cli where sql queries will be executed
 npm install -g -sql-cli
+
+//mssql setup
+sqlcmd -S localhost,1433 -U sa -P Jjdcjjdc29
+or
+docker exec -it SQLAutomation /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Jjdcjjdc29
+
+//When executing sql command, enter Go on the next line to proceed with the execution
+//Sample command for selecting databases
+select name from master.dbo.sysdatabases
+
+
+//Creating Database
+create DATABASE Training
